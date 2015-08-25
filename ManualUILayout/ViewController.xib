@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="uiSwicth2" destination="VoD-8H-9w6" id="C2q-ML-Zdg"/>
+                <outlet property="uiSwitch1" destination="qC2-yp-xrs" id="iRl-9f-Q6L"/>
+                <outlet property="uiSwitch3" destination="Szt-9V-MNK" id="N5s-9w-M33"/>
+                <outlet property="uiSwitch4" destination="frQ-zj-do8" id="Rrp-z2-z1z"/>
+                <outlet property="uiSwitch5" destination="36F-f7-FLV" id="Cxe-ER-ggp"/>
+                <outlet property="uiSwitchContainer" destination="q6m-na-tzM" id="cJG-1E-YzU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="q6m-na-tzM" userLabel="Switch container" customClass="SwitchContainer">
+                    <rect key="frame" x="0.0" y="20" width="320" height="65"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="qC2-yp-xrs" userLabel="Switch 1" customClass="Switch">
+                            <rect key="frame" x="0.0" y="0.0" width="106" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Switch 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rp6-ax-Bmu" userLabel="Title">
+                                    <rect key="frame" x="19" y="5" width="69" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.089920565485954285" green="0.31005147099494934" blue="0.0031515741720795631" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.6023826003074646" green="0.69965082406997681" blue="0.99902951717376709" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="actSwitchTap:" destination="-1" eventType="touchUpInside" id="K9z-Lc-5Hh"/>
+                                <outlet property="uiTitle" destination="rp6-ax-Bmu" id="MhU-b0-8pV"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" id="VoD-8H-9w6" userLabel="Switch 2" customClass="Switch">
+                            <rect key="frame" x="107" y="0.0" width="106" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Switch 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GW4-y5-ZNG" userLabel="Title">
+                                    <rect key="frame" x="19" y="5" width="69" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.089920565485954285" green="0.31005147099494934" blue="0.0031515741720795631" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.60238260030000002" green="0.69965082410000001" blue="0.99902951719999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="actSwitchTap:" destination="-1" eventType="touchUpInside" id="0S0-vM-wR3"/>
+                                <outlet property="uiTitle" destination="GW4-y5-ZNG" id="sN1-9Z-hcZ"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" id="Szt-9V-MNK" userLabel="Switch 3" customClass="Switch">
+                            <rect key="frame" x="214" y="0.0" width="106" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Switch 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RQ0-5i-bNZ" userLabel="Title">
+                                    <rect key="frame" x="19" y="5" width="69" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.089920565485954285" green="0.31005147099494934" blue="0.0031515741720795631" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.60238260030000002" green="0.69965082410000001" blue="0.99902951719999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="actSwitchTap:" destination="-1" eventType="touchUpInside" id="r9L-JZ-XKG"/>
+                                <outlet property="uiTitle" destination="RQ0-5i-bNZ" id="OhG-5j-HkR"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" id="frQ-zj-do8" userLabel="Switch 4" customClass="Switch">
+                            <rect key="frame" x="0.0" y="33" width="159" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Switch 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2kr-oy-Cm6" userLabel="Title">
+                                    <rect key="frame" x="45" y="5" width="69" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.089920565485954285" green="0.31005147099494934" blue="0.0031515741720795631" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.60238260030000002" green="0.69965082410000001" blue="0.99902951719999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="actSwitchTap:" destination="-1" eventType="touchUpInside" id="fAz-2S-v6f"/>
+                                <outlet property="uiTitle" destination="2kr-oy-Cm6" id="WZB-uV-8fK"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" id="36F-f7-FLV" userLabel="Switch 5" customClass="Switch">
+                            <rect key="frame" x="160" y="33" width="160" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Switch 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4fq-vL-C1e" userLabel="Title">
+                                    <rect key="frame" x="46" y="6" width="69" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.089920565485954285" green="0.31005147099494934" blue="0.0031515741720795631" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.60238260030000002" green="0.69965082410000001" blue="0.99902951719999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="actSwitchTap:" destination="-1" eventType="touchUpInside" id="ApN-iR-vAr"/>
+                                <outlet property="uiTitle" destination="4fq-vL-C1e" id="jd7-xH-9Rv"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98195874691009521" green="0.0" blue="0.02675459161400795" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outletCollection property="uiTopRow" destination="qC2-yp-xrs" id="bao-Jl-JgY"/>
+                        <outletCollection property="uiTopRow" destination="VoD-8H-9w6" id="cRV-Jd-85I"/>
+                        <outletCollection property="uiTopRow" destination="Szt-9V-MNK" id="WyC-9F-OlV"/>
+                        <outletCollection property="uiBottomRow" destination="frQ-zj-do8" id="Xl6-UI-7sr"/>
+                        <outletCollection property="uiBottomRow" destination="36F-f7-FLV" id="DLw-aF-xgt"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.82544606924057007" green="1" blue="0.87875324487686157" alpha="1" colorSpace="calibratedRGB"/>
+            <point key="canvasLocation" x="438" y="374"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

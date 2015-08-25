@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  Switch.h
 //  ManualUILayout
 //
 //  Created by Alexey Klyotzin on 25/08/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface Switch : UIControl
 
 @end
