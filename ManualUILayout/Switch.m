@@ -12,6 +12,7 @@
 {
     UIColor *_bgColor;
     UIColor *_selBgColor;
+    UIColor *_hlBgColor;
 }
 
 @property (strong, nonatomic) IBOutlet UILabel *uiTitle;
@@ -26,13 +27,30 @@
     
     _bgColor = self.backgroundColor;
     _selBgColor = [UIColor lightGrayColor];
+    _hlBgColor = [UIColor lightTextColor];
+}
+
+- (void)checkBgColor
+{
+    if (self.highlighted) {
+        self.backgroundColor = _hlBgColor;
+    } else if (self.selected) {
+        self.backgroundColor = _selBgColor;
+    } else {
+        self.backgroundColor = _bgColor;
+    }
 }
 
 - (void)setSelected:(BOOL)selected
 {
     [super setSelected:selected];
-    
-    self.backgroundColor = selected ? _selBgColor : _bgColor;
+    [self checkBgColor];
+}
+
+- (void)setHighlighted:(BOOL)highlighted
+{
+    [super setHighlighted:highlighted];
+    [self checkBgColor];
 }
 
 - (void)layoutSubviews
