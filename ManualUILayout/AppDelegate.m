@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "MenuViewController.h"
 
 @interface AppDelegate ()
 {
@@ -21,7 +22,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    _window.rootViewController = [ViewController new];
+    _window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[MenuViewController new]];
     [_window makeKeyAndVisible];
     
     return YES;

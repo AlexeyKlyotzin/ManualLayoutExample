@@ -37,6 +37,14 @@
 {
     [super viewDidLoad];
     
+    
+    self.uiSwitchContainer.backgroundColor = [UIColor blackColor];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
 }
 
 - (void)viewDidLayoutSubviews
@@ -54,6 +62,7 @@
     _selectedSwitch.selected = NO;
     _selectedSwitch = sw;
     sw.selected = YES;
+    NSLog(@"actSwitchTap");
 }
 
 

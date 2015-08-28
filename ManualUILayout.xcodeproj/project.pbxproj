@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AC0E6111B90491D00EA5C65 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC0E6101B90491D00EA5C65 /* iAd.framework */; };
 		8ADE000D1B8C5294007856B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE000C1B8C5294007856B0 /* main.m */; };
 		8ADE00101B8C5294007856B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE000F1B8C5294007856B0 /* AppDelegate.m */; };
 		8ADE00181B8C5294007856B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ADE00171B8C5294007856B0 /* Images.xcassets */; };
@@ -16,6 +17,10 @@
 		8ADE00341B8C52ED007856B0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ADE00321B8C52ED007856B0 /* ViewController.xib */; };
 		8ADE00381B8C59EB007856B0 /* SwitchContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE00371B8C59EB007856B0 /* SwitchContainer.m */; };
 		8ADE003B1B8C5A4F007856B0 /* Switch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE003A1B8C5A4F007856B0 /* Switch.m */; };
+		8AEE222B1B8EFEC600DDE369 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEE22291B8EFEC600DDE369 /* MenuViewController.m */; };
+		8AEE222C1B8EFEC600DDE369 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AEE222A1B8EFEC600DDE369 /* MenuViewController.xib */; };
+		8AEE22311B8F0CEA00DDE369 /* Screen1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEE222F1B8F0CEA00DDE369 /* Screen1ViewController.m */; };
+		8AEE22321B8F0CEA00DDE369 /* Screen1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AEE22301B8F0CEA00DDE369 /* Screen1ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8AC0E6101B90491D00EA5C65 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		8ADE00071B8C5294007856B0 /* ManualUILayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManualUILayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ADE000B1B8C5294007856B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ADE000C1B8C5294007856B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,6 +52,12 @@
 		8ADE00371B8C59EB007856B0 /* SwitchContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchContainer.m; sourceTree = "<group>"; };
 		8ADE00391B8C5A4F007856B0 /* Switch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Switch.h; sourceTree = "<group>"; };
 		8ADE003A1B8C5A4F007856B0 /* Switch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Switch.m; sourceTree = "<group>"; };
+		8AEE22281B8EFEC600DDE369 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		8AEE22291B8EFEC600DDE369 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		8AEE222A1B8EFEC600DDE369 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		8AEE222E1B8F0CEA00DDE369 /* Screen1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Screen1ViewController.h; sourceTree = "<group>"; };
+		8AEE222F1B8F0CEA00DDE369 /* Screen1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Screen1ViewController.m; sourceTree = "<group>"; };
+		8AEE22301B8F0CEA00DDE369 /* Screen1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Screen1ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AC0E6111B90491D00EA5C65 /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +91,8 @@
 		8ADE00091B8C5294007856B0 /* ManualUILayout */ = {
 			isa = PBXGroup;
 			children = (
-				8ADE00351B8C5976007856B0 /* UI */,
+				8ADE00351B8C5976007856B0 /* Simple layout */,
+				8AEE22271B8EFDF300DDE369 /* Navigation */,
 				8ADE000A1B8C5294007856B0 /* Supporting Files */,
 			);
 			path = ManualUILayout;
@@ -114,7 +128,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8ADE00351B8C5976007856B0 /* UI */ = {
+		8ADE00351B8C5976007856B0 /* Simple layout */ = {
 			isa = PBXGroup;
 			children = (
 				8ADE00301B8C52ED007856B0 /* ViewController.h */,
@@ -125,16 +139,30 @@
 				8ADE00391B8C5A4F007856B0 /* Switch.h */,
 				8ADE003A1B8C5A4F007856B0 /* Switch.m */,
 			);
-			name = UI;
+			name = "Simple layout";
 			sourceTree = "<group>";
 		};
 		8ADEFFFE1B8C5294007856B0 = {
 			isa = PBXGroup;
 			children = (
+				8AC0E6101B90491D00EA5C65 /* iAd.framework */,
 				8ADE00091B8C5294007856B0 /* ManualUILayout */,
 				8ADE00231B8C5294007856B0 /* ManualUILayoutTests */,
 				8ADE00081B8C5294007856B0 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		8AEE22271B8EFDF300DDE369 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				8AEE22281B8EFEC600DDE369 /* MenuViewController.h */,
+				8AEE22291B8EFEC600DDE369 /* MenuViewController.m */,
+				8AEE222A1B8EFEC600DDE369 /* MenuViewController.xib */,
+				8AEE222E1B8F0CEA00DDE369 /* Screen1ViewController.h */,
+				8AEE222F1B8F0CEA00DDE369 /* Screen1ViewController.m */,
+				8AEE22301B8F0CEA00DDE369 /* Screen1ViewController.xib */,
+			);
+			name = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +248,8 @@
 				8ADE001B1B8C5294007856B0 /* LaunchScreen.xib in Resources */,
 				8ADE00341B8C52ED007856B0 /* ViewController.xib in Resources */,
 				8ADE00181B8C5294007856B0 /* Images.xcassets in Resources */,
+				8AEE222C1B8EFEC600DDE369 /* MenuViewController.xib in Resources */,
+				8AEE22321B8F0CEA00DDE369 /* Screen1ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ADE00331B8C52ED007856B0 /* ViewController.m in Sources */,
+				8AEE22311B8F0CEA00DDE369 /* Screen1ViewController.m in Sources */,
+				8AEE222B1B8EFEC600DDE369 /* MenuViewController.m in Sources */,
 				8ADE00381B8C59EB007856B0 /* SwitchContainer.m in Sources */,
 				8ADE003B1B8C5A4F007856B0 /* Switch.m in Sources */,
 				8ADE00101B8C5294007856B0 /* AppDelegate.m in Sources */,
@@ -428,6 +460,7 @@
 				8ADE002C1B8C5294007856B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8ADE002D1B8C5294007856B0 /* Build configuration list for PBXNativeTarget "ManualUILayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +469,7 @@
 				8ADE002F1B8C5294007856B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

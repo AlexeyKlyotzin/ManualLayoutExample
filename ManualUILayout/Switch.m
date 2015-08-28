@@ -27,7 +27,7 @@
     
     _bgColor = self.backgroundColor;
     _selBgColor = [UIColor lightGrayColor];
-    _hlBgColor = [UIColor lightTextColor];
+    _hlBgColor = [UIColor redColor];
 }
 
 - (void)checkBgColor
