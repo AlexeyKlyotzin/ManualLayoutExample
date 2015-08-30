@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "MenuViewController.h"
+#import "TestObjectiveC.h"
 
 @interface AppDelegate ()
 {
@@ -24,6 +25,8 @@
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     _window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[MenuViewController new]];
     [_window makeKeyAndVisible];
+    
+    [TestObjectiveC run];
     
     return YES;
 }

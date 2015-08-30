@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8AC0E6111B90491D00EA5C65 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC0E6101B90491D00EA5C65 /* iAd.framework */; };
+		8AC2AC4D1B9368200073FF20 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC2AC4C1B9368200073FF20 /* User.m */; };
+		8AC2AC501B936A720073FF20 /* TestObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC2AC4F1B936A720073FF20 /* TestObjectiveC.m */; };
 		8ADE000D1B8C5294007856B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE000C1B8C5294007856B0 /* main.m */; };
 		8ADE00101B8C5294007856B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE000F1B8C5294007856B0 /* AppDelegate.m */; };
 		8ADE00181B8C5294007856B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ADE00171B8C5294007856B0 /* Images.xcassets */; };
@@ -35,6 +37,10 @@
 
 /* Begin PBXFileReference section */
 		8AC0E6101B90491D00EA5C65 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		8AC2AC4B1B9368200073FF20 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		8AC2AC4C1B9368200073FF20 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		8AC2AC4E1B936A720073FF20 /* TestObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObjectiveC.h; sourceTree = "<group>"; };
+		8AC2AC4F1B936A720073FF20 /* TestObjectiveC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObjectiveC.m; sourceTree = "<group>"; };
 		8ADE00071B8C5294007856B0 /* ManualUILayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManualUILayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ADE000B1B8C5294007856B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ADE000C1B8C5294007856B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -79,6 +85,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8AC2AC4A1B9367FD0073FF20 /* Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				8AC2AC4B1B9368200073FF20 /* User.h */,
+				8AC2AC4C1B9368200073FF20 /* User.m */,
+				8AC2AC4E1B936A720073FF20 /* TestObjectiveC.h */,
+				8AC2AC4F1B936A720073FF20 /* TestObjectiveC.m */,
+			);
+			name = "Objective-C";
+			sourceTree = "<group>";
+		};
 		8ADE00081B8C5294007856B0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +108,7 @@
 		8ADE00091B8C5294007856B0 /* ManualUILayout */ = {
 			isa = PBXGroup;
 			children = (
+				8AC2AC4A1B9367FD0073FF20 /* Objective-C */,
 				8ADE00351B8C5976007856B0 /* Simple layout */,
 				8AEE22271B8EFDF300DDE369 /* Navigation */,
 				8ADE000A1B8C5294007856B0 /* Supporting Files */,
@@ -267,12 +285,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AC2AC4D1B9368200073FF20 /* User.m in Sources */,
 				8ADE00331B8C52ED007856B0 /* ViewController.m in Sources */,
 				8AEE22311B8F0CEA00DDE369 /* Screen1ViewController.m in Sources */,
 				8AEE222B1B8EFEC600DDE369 /* MenuViewController.m in Sources */,
 				8ADE00381B8C59EB007856B0 /* SwitchContainer.m in Sources */,
 				8ADE003B1B8C5A4F007856B0 /* Switch.m in Sources */,
 				8ADE00101B8C5294007856B0 /* AppDelegate.m in Sources */,
+				8AC2AC501B936A720073FF20 /* TestObjectiveC.m in Sources */,
 				8ADE000D1B8C5294007856B0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
