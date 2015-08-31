@@ -26,7 +26,7 @@
     _window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[MenuViewController new]];
     [_window makeKeyAndVisible];
     
-    [TestObjectiveC run];
+    [[TestObjectiveC new] run];
     
     return YES;
 }

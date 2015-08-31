@@ -10,6 +10,6 @@
 
 @interface TestObjectiveC : NSObject
 
-+ (void)run;
+- (void)run;
 
 @end
