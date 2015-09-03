@@ -2,34 +2,25 @@
 //  User.h
 //  ManualUILayout
 //
-//  Created by Alexey Klyotzin on 30/08/15.
+//  Created by Alexey Klyotzin on 03/09/15.
 //  Copyright (c) 2015 Test projects. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface User : NSObject
-{
-// По умолчанию все instance variables @protected
-    
-    NSInteger age;
-@public
-    NSString *username;
-    
-@private
-    float weight;
-}
+@interface User : NSObject <NSCopying>
 
-- (instancetype)initWithFirstName:(NSString *)firstName lastName:(NSString *)lastName;
+- (instancetype)initWithUserId:(NSInteger)userId
+                      username:(NSString *)username
+                     firstName:(NSString *)firstName
+                      lastName:(NSString *)lastName;
 
-@property NSInteger userId; //(assign, atomic, readwrite)
-@property (nonatomic) NSString *firstName; //(strong, readwrite)
-@property (copy, nonatomic) NSString *lastName;
-@property (readonly, nonatomic) NSString *fullName;
-@property (weak, nonatomic) NSString *weakProp;
-@property (assign, nonatomic) float footSize;
+- (instancetype)initWithUserId:(NSInteger)userId;
 
-@property (copy, nonatomic) void(^onFirstNameChanged)(NSString *prevFirstName, NSString *newFirstName);
 
+@property (nonatomic) NSInteger userId;
+@property (nonatomic) NSString *username;
+@property (nonatomic) NSString *firstName;
+@property (nonatomic) NSString *lastName;
 
 @end

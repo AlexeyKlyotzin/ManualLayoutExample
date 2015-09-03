@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AB6E6CA1B983E7100BF2F98 /* TestBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6E6C91B983E7100BF2F98 /* TestBlocks.m */; };
+		8AB6E6CD1B98930700BF2F98 /* TestContainers.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6E6CC1B98930700BF2F98 /* TestContainers.m */; };
+		8AB6E6D01B9893B500BF2F98 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6E6CF1B9893B500BF2F98 /* User.m */; };
 		8AC0E6111B90491D00EA5C65 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC0E6101B90491D00EA5C65 /* iAd.framework */; };
-		8AC2AC4D1B9368200073FF20 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC2AC4C1B9368200073FF20 /* User.m */; };
+		8AC2AC4D1B9368200073FF20 /* User___.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC2AC4C1B9368200073FF20 /* User___.m */; };
 		8AC2AC501B936A720073FF20 /* TestObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC2AC4F1B936A720073FF20 /* TestObjectiveC.m */; };
 		8ADE000D1B8C5294007856B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE000C1B8C5294007856B0 /* main.m */; };
 		8ADE00101B8C5294007856B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE000F1B8C5294007856B0 /* AppDelegate.m */; };
@@ -36,9 +39,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8AB6E6C81B983E7100BF2F98 /* TestBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBlocks.h; sourceTree = "<group>"; };
+		8AB6E6C91B983E7100BF2F98 /* TestBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBlocks.m; sourceTree = "<group>"; };
+		8AB6E6CB1B98930700BF2F98 /* TestContainers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestContainers.h; sourceTree = "<group>"; };
+		8AB6E6CC1B98930700BF2F98 /* TestContainers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestContainers.m; sourceTree = "<group>"; };
+		8AB6E6CE1B9893B500BF2F98 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		8AB6E6CF1B9893B500BF2F98 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		8AC0E6101B90491D00EA5C65 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
-		8AC2AC4B1B9368200073FF20 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		8AC2AC4C1B9368200073FF20 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		8AC2AC4B1B9368200073FF20 /* User___.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User___.h"; sourceTree = "<group>"; };
+		8AC2AC4C1B9368200073FF20 /* User___.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User___.m"; sourceTree = "<group>"; };
 		8AC2AC4E1B936A720073FF20 /* TestObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObjectiveC.h; sourceTree = "<group>"; };
 		8AC2AC4F1B936A720073FF20 /* TestObjectiveC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObjectiveC.m; sourceTree = "<group>"; };
 		8ADE00071B8C5294007856B0 /* ManualUILayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManualUILayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,10 +97,16 @@
 		8AC2AC4A1B9367FD0073FF20 /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
-				8AC2AC4B1B9368200073FF20 /* User.h */,
-				8AC2AC4C1B9368200073FF20 /* User.m */,
+				8AC2AC4B1B9368200073FF20 /* User___.h */,
+				8AC2AC4C1B9368200073FF20 /* User___.m */,
 				8AC2AC4E1B936A720073FF20 /* TestObjectiveC.h */,
 				8AC2AC4F1B936A720073FF20 /* TestObjectiveC.m */,
+				8AB6E6C81B983E7100BF2F98 /* TestBlocks.h */,
+				8AB6E6C91B983E7100BF2F98 /* TestBlocks.m */,
+				8AB6E6CB1B98930700BF2F98 /* TestContainers.h */,
+				8AB6E6CC1B98930700BF2F98 /* TestContainers.m */,
+				8AB6E6CE1B9893B500BF2F98 /* User.h */,
+				8AB6E6CF1B9893B500BF2F98 /* User.m */,
 			);
 			name = "Objective-C";
 			sourceTree = "<group>";
@@ -285,12 +300,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AC2AC4D1B9368200073FF20 /* User.m in Sources */,
+				8AB6E6CD1B98930700BF2F98 /* TestContainers.m in Sources */,
+				8AC2AC4D1B9368200073FF20 /* User___.m in Sources */,
 				8ADE00331B8C52ED007856B0 /* ViewController.m in Sources */,
 				8AEE22311B8F0CEA00DDE369 /* Screen1ViewController.m in Sources */,
 				8AEE222B1B8EFEC600DDE369 /* MenuViewController.m in Sources */,
 				8ADE00381B8C59EB007856B0 /* SwitchContainer.m in Sources */,
+				8AB6E6CA1B983E7100BF2F98 /* TestBlocks.m in Sources */,
 				8ADE003B1B8C5A4F007856B0 /* Switch.m in Sources */,
+				8AB6E6D01B9893B500BF2F98 /* User.m in Sources */,
 				8ADE00101B8C5294007856B0 /* AppDelegate.m in Sources */,
 				8AC2AC501B936A720073FF20 /* TestObjectiveC.m in Sources */,
 				8ADE000D1B8C5294007856B0 /* main.m in Sources */,

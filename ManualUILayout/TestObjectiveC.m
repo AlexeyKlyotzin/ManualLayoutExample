@@ -7,7 +7,7 @@
 //
 
 #import "TestObjectiveC.h"
-#import "User.h"
+#import "User___.h"
 
 @interface TestObjectiveC ()
 {
@@ -24,7 +24,6 @@
 
 - (void)run
 {
-    User *user = [User new];
     
     NSInteger value = 156;
     _valPtr = &value;

@@ -10,10 +10,13 @@
 #import "ViewController.h"
 #import "MenuViewController.h"
 #import "TestObjectiveC.h"
+#import "TestBlocks.h"
+#import "TestContainers.h"
 
 @interface AppDelegate ()
 {
     UIWindow *_window;
+    TestBlocks *_blk;
 }
 @end
 
@@ -27,6 +30,12 @@
     [_window makeKeyAndVisible];
     
     [[TestObjectiveC new] run];
+    
+    _blk = [TestBlocks new];
+    [_blk run];
+    _blk = nil;
+    
+    [[TestContainers new] run];
     
     return YES;
 }

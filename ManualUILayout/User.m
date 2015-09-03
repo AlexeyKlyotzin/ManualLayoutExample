@@ -2,67 +2,42 @@
 //  User.m
 //  ManualUILayout
 //
-//  Created by Alexey Klyotzin on 30/08/15.
+//  Created by Alexey Klyotzin on 03/09/15.
 //  Copyright (c) 2015 Test projects. All rights reserved.
 //
 
 #import "User.h"
 
-@interface User ()
+@implementation User
+
+- (instancetype)initWithUserId:(NSInteger)userId
+                      username:(NSString *)username
+                     firstName:(NSString *)firstName
+                      lastName:(NSString *)lastName
 {
-    float _height;
+    self = [super init];
+    if (!self) {
+        return nil;
+    }
+    
+    self.userId = userId;
+    self.username = username;
+    self.firstName = firstName;
+    self.lastName = lastName;
+    return self;
 }
 
-- (NSString *)calculateFullName;
-
-@end
-
-@implementation User
+- (instancetype)initWithUserId:(NSInteger)userId
+{
+    return [self initWithUserId:userId
+                       username:[NSString stringWithFormat:@"username%ld", userId]
+                      firstName:[NSString stringWithFormat:@"FirstName%ld", userId]
+                       lastName:[NSString stringWithFormat:@"LastName%ld", userId]];
+}
 
 - (instancetype)init
 {
-    self = [super init];
-    if (!self) {
-        return nil;
-    }
-    
-    _height = 180;
-    
-    return self;
-}
-
-- (instancetype)initWithFirstName:(NSString *)firstName lastName:(NSString *)lastName
-{
-    self = [super init];
-    if (!self) {
-        return nil;
-    }
-    
-    self.firstName = firstName;
-    self.lastName = lastName;
-    
-    return self;
-}
-
-- (NSString *)calculateFullName
-{
-    return [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
-}
-
-- (NSString *)fullName
-{
-    return [self calculateFullName];
-}
-
-- (void)setFirstName:(NSString *)firstName
-{
-    NSString *prevFirstName = self.firstName;
-    
-    self.firstName = prevFirstName;
-    
-    if (self.onFirstNameChanged) {
-        self.onFirstNameChanged(prevFirstName, self.firstName);
-    }
+    return [self initWithUserId:777];
 }
 
 - (BOOL)isEqual:(id)object
@@ -73,6 +48,14 @@
 - (NSUInteger)hash
 {
     return [@(self.userId) hash];
+}
+
+- (id)copyWithZone:(NSZone *)zone
+{
+    return [[[self class] allocWithZone:zone] initWithUserId:self.userId
+                                                    username:self.username
+                                                   firstName:self.firstName
+                                                    lastName:self.lastName];
 }
 
 @end
